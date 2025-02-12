@@ -1,0 +1,16 @@
+body {
+    width: 350px;
+    height: 610px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    align-items: center;
+    font-size: medium;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)), url("https://mrwallpaper.com/images/high/aesthetic-doodles-random-art-5rfg9ltbrcs1soex.jpg");
+    background-size: 360px 620px;
+    background-repeat: no-repeat;
+    background-position: center;
+    border: solid black;
+    border-radius: 5px;
+    margin: 10px auto;
+    padding: 5px;
+}
