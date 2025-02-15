@@ -15,6 +15,7 @@ body {
     padding: 5px;
 }
 .text-elements {
+    font-size: 90%;
     text-align: left;
     align-items: left;
     margin-left: 8px;
