@@ -16,9 +16,15 @@ let currentIndex = 0;
 document.getElementById('Generate1').addEventListener('click', function() {
     const category = document.getElementById('operation1').value;
     const Result1 = document.getElementById('Result1');
-    if (Result1 && selectedOptions[category]) {
-        Result1.innerText = selectedOptions[category][currentIndex];
-        currentIndex = (currentIndex + 3) % selectedOptions[category].length;
+    let items;
+    if (category === "All") {
+        items = [].concat(...Object.values(selectedOptions));
+    } else {
+        items = selectedOptions[category];
+    }
+    if (Result1 && items) {
+        Result1.innerText = items[currentIndex];
+        currentIndex = (currentIndex + 3) % items.length;
     } else {
         console.error('Element with id "Result1" or selected category not found.');
     }
@@ -27,9 +33,15 @@ document.getElementById('Generate1').addEventListener('click', function() {
 document.getElementById('Generate2').addEventListener('click', function() {
     const category = document.getElementById('operation2').value;
     const Result2 = document.getElementById('Result2');
-    if (Result2 && selectedOptions[category]) {
-        Result2.innerText = selectedOptions[category][currentIndex];
-        currentIndex = (currentIndex + 3) % selectedOptions[category].length;
+    let items;
+    if (category === "All") {
+        items = [].concat(...Object.values(selectedOptions));
+    } else {
+        items = selectedOptions[category];
+    }
+    if (Result2 && items) {
+        Result2.innerText = items[currentIndex];
+        currentIndex = (currentIndex + 3) % items.length;
     } else {
         console.error('Element with id "Result2" or selected category not found.');
     }
@@ -38,3 +50,5 @@ document.getElementById('Generate2').addEventListener('click', function() {
 function resetPage(){
     location.reload();
 }
+
+
