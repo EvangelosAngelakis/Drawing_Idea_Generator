@@ -66,12 +66,13 @@ body {
 #Result1, #Result2 {
     border: solid black;
     width: 106px;
-    height: 20px;
+    height: 35px;
     background-color: rgb(254, 255, 175);
     border-radius: 5px;
     margin-left: -20px;
+    word-wrap: break-word;
 }
 #RstButton {
-    margin-top: 180px;
+    margin-top: 150px;
 }
 
