@@ -17,38 +17,42 @@ document.getElementById('Generate1').addEventListener('click', function() {
     const category = document.getElementById('operation1').value;
     const Result1 = document.getElementById('Result1');
     let items;
+
     if (category === "All") {
         items = [].concat(...Object.values(selectedOptions));
+        const randomIndex = Math.floor(Math.random() * items.length);
+        Result1.innerText = items[randomIndex];
     } else {
         items = selectedOptions[category];
-    }
-    if (Result1 && items) {
-        Result1.innerText = items[currentIndex];
-        currentIndex = (currentIndex + 3) % items.length;
-    } else {
-        console.error('Element with id "Result1" or selected category not found.');
+        if (Result1 && items && items.length > 0) {
+            Result1.innerText = items[currentIndex];
+            currentIndex = (currentIndex + 3) % items.length;
+        } else {
+            console.error('Element with id "Result1" or selected category not found.');
+        }
     }
 });
 
 document.getElementById('Generate2').addEventListener('click', function() {
     const category = document.getElementById('operation2').value;
-    const Result2 = document.getElementById('Result2');
+    const Result1 = document.getElementById('Result2');
     let items;
+
     if (category === "All") {
         items = [].concat(...Object.values(selectedOptions));
+        const randomIndex = Math.floor(Math.random() * items.length);
+        Result1.innerText = items[randomIndex];
     } else {
         items = selectedOptions[category];
-    }
-    if (Result2 && items) {
-        Result2.innerText = items[currentIndex];
-        currentIndex = (currentIndex + 3) % items.length;
-    } else {
-        console.error('Element with id "Result2" or selected category not found.');
+        if (Result1 && items && items.length > 0) {
+            Result1.innerText = items[currentIndex];
+            currentIndex = (currentIndex + 3) % items.length;
+        } else {
+            console.error('Element with id "Result2" or selected category not found.');
+        }
     }
 });
 
 function resetPage(){
     location.reload();
 }
-
-

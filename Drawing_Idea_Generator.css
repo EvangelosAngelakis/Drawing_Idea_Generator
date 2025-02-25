@@ -14,11 +14,15 @@ body {
     margin: 10px auto;
     padding: 5px;
 }
+#title {
+    background-color: rgba(245, 245, 245, 0.5);
+}
 .text-elements {
     font-size: 90%;
     text-align: left;
     align-items: left;
     margin-left: 8px;
+    background-color: rgba(245, 245, 245, 0.5);
 }
 .inline-elements {
     display: flex;
@@ -32,7 +36,7 @@ body {
 }
 .inline-elements label {
     margin-bottom: 5px; 
-    background-color: whitesmoke;
+    background-color: whitesmoke 25%;
 }
 .inline-elements2 {
     display: flex;
