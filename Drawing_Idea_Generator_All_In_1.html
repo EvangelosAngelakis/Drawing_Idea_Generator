@@ -21,14 +21,15 @@ body {
     padding: 5px;
 }
 #title {
-    background-color: rgba(245, 245, 245, 0.5);
+    background-color: rgba(245, 245, 245, 0.6);
+    margin-top: -5px;
 }
 .text-elements {
     font-size: 90%;
     text-align: left;
     align-items: left;
     margin-left: 8px;
-    background-color: rgba(245, 245, 245, 0.5);
+    background-color: rgba(245, 245, 245, 0.6);
 }
 .inline-elements {
     display: flex;
@@ -39,6 +40,7 @@ body {
 .inline-elements > div {
     display: flex;
     flex-direction: column;
+    background-color: rgba(245, 245, 245, 0.6);
 }
 .inline-elements label {
     margin-bottom: 5px; 
@@ -46,8 +48,8 @@ body {
 }
 .inline-elements2 {
     display: flex;
-    margin-left: 62px;
-    gap: 90px;
+    margin-left: 61px;
+    gap: 74px;
 }
 .inline-elements2 > div {
     display: flex;
@@ -58,16 +60,22 @@ body {
 }
 #Generate1 {
     background-color: rgb(178, 255, 182);
-    border-radius: 5px;
+    height: 70px;
+    border-radius: 50%;
+    border: solid black;
+    font-weight: bold;
 }
 #Generate2 {
     background-color: rgb(178, 255, 182);
-    border-radius: 5px;
+    height: 70px;
+    border-radius: 50%;
+    border: solid black;
+    font-weight: bold;
 }
 .inline-elements3 {
     display: flex;
     margin-left: 61px;
-    gap: 73px;
+    gap: 90px;
 }
 .inline-elements3 > div {
     display: flex;
@@ -83,13 +91,13 @@ body {
     word-wrap: break-word;
 }
 #RstButton {
-    margin-top: 150px;
+    margin-top: 210px;
 }
         </style>
         <title>Drawing Idea Generator</title>
     </head>
     <body>
-        <h1>Evan's Drawing Game</h1>
+        <h1 id="title">Evan's Drawing Game</h1>
         <div class="text-elements">
            <div>
         <p>1. Select an item from option 1 and option 2.</p>
@@ -98,7 +106,7 @@ body {
         <p>4. Don't forget to have fun :-).</p>
            </div>
         </div>
-        <br><br>
+        <br>
         <div class="inline-elements">
             <div>
                 <label for="operation1">Select option 1:</label>
@@ -135,22 +143,20 @@ body {
                 </select>
             </div>
         </div>
-        <br><br>
         <div class="inline-elements2">
-            <div>
-                 <button id="Generate1">Generate</button>
-            </div>
-            <div>
-                <button id="Generate2">Generate</button>
-           </div>
-        </div>
-        <br>
-        <div class="inline-elements3">
             <div>
                  <p id="Result1">Option 1</p>
             </div>
             <div>
                 <p id="Result2">Option 2</p>
+           </div>
+        </div>
+        <div class="inline-elements3">
+            <div>
+                 <button id="Generate1">Generate</button>
+            </div>
+            <div>
+                <button id="Generate2">Generate</button>
            </div>
         </div>
         <div><button id="RstButton" onclick="resetPage()">Reset Game</button></div>
