@@ -52,6 +52,15 @@ body {
 .inline-elements2 label {
     margin-bottom: 5px; 
 }
+.inline-elements3 {
+    display: flex;
+    margin-left: 61px;
+    gap: 90px;
+}
+.inline-elements3 > div {
+    display: flex;
+    flex-direction: column;
+}
 #Generate1 {
     background-color: rgb(178, 255, 182);
     height: 70px;
@@ -66,15 +75,6 @@ body {
     border: solid black;
     font-weight: bold;
 }
-.inline-elements3 {
-    display: flex;
-    margin-left: 61px;
-    gap: 90px;
-}
-.inline-elements3 > div {
-    display: flex;
-    flex-direction: column;
-}
 #Result1, #Result2 {
     border: solid black;
     width: 106px;
@@ -84,7 +84,19 @@ body {
     margin-left: -20px;
     word-wrap: break-word;
 }
+.inline-elements4 {
+    display: flex;
+    margin-top: 30px;
+    margin-left: 15px;
+    gap: 15px;
+}
+.inline-elements4 > div {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    border: solid black;
+}
 #RstButton {
-    margin-top: 210px;
+    margin-top: 10px;
 }
 
